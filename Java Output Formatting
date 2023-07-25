@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                String s="";
+            int l = s1.length(),j=0;
+            while(j<15-l){
+             s=s+" ";   
+             j++;
+            }
+            if(x<=99)
+            System.out.println(s1+s+"0"+(x==0?"00":x));
+            else
+            System.out.println(s1+s+x);
+            //Complete this line
+        
+            }
+            System.out.println("================================");
+
+    }
+}
